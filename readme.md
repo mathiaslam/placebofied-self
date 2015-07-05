@@ -1,6 +1,6 @@
 # Placebofied-Self (working title)
 
-Placebofied-Self is a series of hacked products which cause a placebo effect by its users. By manipulating results of different tracking devices (such as a scale, a step counter or a running app) the user will either be contented or pushed to achive better results.
+Placebofied-Self is a series of hacked products which cause a placebo effect by its users. By manipulating results of different tracking devices (such as a scale, a step counter or a running app) the user will either be contented or pushed to achieve better results.
 
 ---
 
