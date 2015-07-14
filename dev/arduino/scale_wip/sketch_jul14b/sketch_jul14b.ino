@@ -1,7 +1,6 @@
 #include <SoftwareSerial.h>
 #include <Streaming.h>
 
-#define DEBUG 1
 
 int           lcdA=0,lcdB=0,lcdC=0,lcdD=0;
 bool          lcd1,lcd2,lcd3,lcd4,lcd5,lcd6,lcd7,lcd8,lcd9;
@@ -77,6 +76,7 @@ void loop() {
 
             if (lcdA==0)
             {
+                                       
                 SA[0] += lcd1;
                 SA[1] += lcd2;
                 SA[2] += lcd3;
@@ -142,30 +142,11 @@ for (int i=0;i<9;i++)
 }
 
 
-
-//#if DEBUG
-//    Serial << "A ";
-//    for (int i=0;i<9;i++) Serial << (A[i]?"1":"0");
-//    Serial << " - ";
-//    Serial << "B ";
-//    for (int i=0;i<9;i++) Serial << (B[i]?"1":"0");
-//    Serial << " - ";
-//    Serial << "C ";
-//    for (int i=0;i<9;i++) Serial << (C[i]?"1":"0");
-//    Serial << " - ";
-//    Serial << "D ";
-//    for (int i=0;i<9;i++) Serial << (D[i]?"1":"0");
-//    Serial.print("\n");
-//#endif
-
-
 // decoding
     float weight = 100.0*getDigit(0) + 10.0*getDigit(1) + 1.0*getDigit(2) + 0.1*getDigit(3);
+    Serial.print(weight);
 
 
-    #if DEBUG
-        Serial << "Weight is " << weight << " kg" << endl;
-    #endif
 
 } //end of if
 
