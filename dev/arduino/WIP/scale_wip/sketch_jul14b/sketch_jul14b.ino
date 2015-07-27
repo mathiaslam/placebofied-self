@@ -39,7 +39,8 @@ void loop() {
     lcdB = analogRead(A1);
     lcdC = analogRead(A2);
     lcdD = analogRead(A3);
-  
+
+    
 
 //    Serial.print("ab hier gehts los: ABCD");
 //        Serial.print('\n');
@@ -64,7 +65,7 @@ void loop() {
         lcdC = analogRead(A2);
         lcdD = analogRead(A3);
         
-        lcd1 = digitalRead(A5);
+        //lcd1 = digitalRead(A5);
         lcd2 = digitalRead(A4);
         lcd3 = digitalRead(3);
         lcd4 = digitalRead(4);
@@ -72,11 +73,10 @@ void loop() {
         lcd6 = digitalRead(6);
         lcd7 = digitalRead(7);
         lcd8 = digitalRead(8);
-        lcd9 = digitalRead(9);
+       // lcd9 = digitalRead(9);
 
             if (lcdA==0)
-            {
-                                       
+            {                     
                 SA[0] += lcd1;
                 SA[1] += lcd2;
                 SA[2] += lcd3;
@@ -139,13 +139,16 @@ for (int i=0;i<9;i++)
     B[i] = (1.0 * SB[i] / SBn >0.5);
     C[i] = (1.0 * SC[i] / SCn >0.5);
     D[i] = (1.0 * SD[i] / SDn >0.5);
+ 
 }
 
 
 // decoding
     float weight = 100.0*getDigit(0) + 10.0*getDigit(1) + 1.0*getDigit(2) + 0.1*getDigit(3);
+    Serial.print("GEWICHT:");
     Serial.print(weight);
-
+    Serial.print('\n');
+    
 
 
 } //end of if
