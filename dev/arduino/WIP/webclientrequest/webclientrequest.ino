@@ -10,9 +10,9 @@
 #include <Adafruit_ESP8266.h>
 #include <SoftwareSerial.h>
 
-#define ESP_RX   3
-#define ESP_TX   2
-#define ESP_RST  4
+#define ESP_RX   5
+#define ESP_TX   4
+#define ESP_RST  7
 SoftwareSerial softser(ESP_RX, ESP_TX);
 
 // Must declare output stream before Adafruit_ESP8266 constructor; can be
@@ -23,8 +23,8 @@ Adafruit_ESP8266 wifi(&softser, &Serial, ESP_RST);
 #define ESP_SSID "o2-WLAN04" // Your network name here
 #define ESP_PASS "8EB6H797GW7893M9" // Your network password here
 
-#define HOST     "data.sparkfun.com"     // Host to contact
-#define PAGE     "/output/VGAoKDy1ZmSM9Xqv0bqJ.txt?private_keya9YAG4yXkRrIw4rvdV6vo" // Web page to request
+#define HOST     "mathiaslam.de"     // Host to contact
+#define PAGE     "/placebofied/myFile.txt" // Web page to request
 #define PORT     80                     // 80 = HTTP default port
 
 #define LED_PIN  13
