@@ -20,27 +20,17 @@ SoftwareSerial softser(ESP_RX, ESP_TX);
 Adafruit_ESP8266 wifi(&softser, &Serial, ESP_RST);
 // Must call begin() on the stream(s) before using Adafruit_ESP8266 object.
 
-#define ESP_SSID "o2-WLAN04" // Your network name here
-#define ESP_PASS "8EB6H797GW7893M9" // Your network password here
+#define ESP_SSID "o2-WLAN54" // Your network name here
+#define ESP_PASS "7739466441199644" // Your network password here
 
-#define HOST     "mathiaslam.de"     // Host to contact
-#define PAGE     "/placebofied/myFile.txt" // Web page to request
+#define HOST     "data.sparkfun.com"     // Host to contact
+#define PAGE     "/output/VGAoKDy1ZmSM9Xqv0bqJ.txt?private_keya9YAG4yXkRrIw4rvdV6vo" // Web page to request
 #define PORT     80                     // 80 = HTTP default port
 
 #define LED_PIN  13
-
-void setup() {
   char buffer[50];
+void setup() {
 
-  // Flash LED on power-up
-  pinMode(LED_PIN, OUTPUT);
-  for(uint8_t i=0; i<3; i++) {
-    digitalWrite(13, HIGH); delay(50);
-    digitalWrite(13, LOW);  delay(100);
-  }
-
-  // This might work with other firmware versions (no guarantees)
-  // by providing a string to ID the tail end of the boot message:
   
   // comment/replace this if you are using something other than v 0.9.2.4!
   wifi.setBootMarker(F("Version:0.9.2.4]\r\n\r\nready"));
@@ -75,6 +65,10 @@ void setup() {
   }
 
   Serial.print(F("Connecting to WiFi..."));
+
+}
+
+void loop() {
   if(wifi.connectToAP(F(ESP_SSID), F(ESP_PASS))) {
 
     // IP addr check isn't part of library yet, but
@@ -110,11 +104,8 @@ void setup() {
     } else { // IP addr check failed
       Serial.println(F("error"));
     }
-    wifi.closeAP();
+    
   } else { // WiFi connection failed
     Serial.println(F("FAIL"));
   }
-}
-
-void loop() {
 }

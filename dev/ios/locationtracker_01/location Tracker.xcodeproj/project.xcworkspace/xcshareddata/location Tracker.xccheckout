@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>95C79F50-49E3-46BB-BFF9-2B6DB1E3EF8F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>location Tracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>50D5D66E4D2BCB36CB00EF3406D7DA20526C2BCB</key>
+		<string>https://github.com/mathiaslam/placebofied-self.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>dev/ios/locationtracker_01/location Tracker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>50D5D66E4D2BCB36CB00EF3406D7DA20526C2BCB</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mathiaslam/placebofied-self.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>50D5D66E4D2BCB36CB00EF3406D7DA20526C2BCB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>50D5D66E4D2BCB36CB00EF3406D7DA20526C2BCB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>03_placebofied-self</string>
+		</dict>
+	</array>
+</dict>
+</plist>
