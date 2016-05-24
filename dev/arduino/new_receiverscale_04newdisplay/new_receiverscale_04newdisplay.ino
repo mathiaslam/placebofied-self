@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <SoftwareSerial.h>
-#include <ESP8266_Simple.h>
+
 #include "HX711.h"
 
 #include <Wire.h>
@@ -22,7 +22,6 @@ Adafruit_7segment matrix = Adafruit_7segment();
 
 
 HX711 scale(17, 16);
-ESP8266_Simple wifi(13, 12);
 
 
 const int knockSensor = A0;
@@ -89,7 +88,7 @@ void setup()
 
   wifi.begin(9600);
 
-  wifi.setupAsWifiStation(ESP8266_SSID, ESP8266_PASS, &Serial);
+  //wifi.setupAsWifiStation(ESP8266_SSID, ESP8266_PASS, &Serial);
   digitalWrite(7, HIGH);
 
   Serial.println("Ready");
@@ -129,7 +128,7 @@ void loop()
 
       newWeight = scale.get_units();
 
-      if (oldWeight == newWeight)  {
+      if (oldWeight == newWeight)  {
         oldWeight = newWeight;
         matrix.writeDisplay();
 

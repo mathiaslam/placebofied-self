@@ -1,0 +1,63 @@
+[{
+    "type": "road",
+    "posX": "0",
+    "posY": "0",
+    "size": "1"
+}, {
+    "type": "road",
+    "posX": "1",
+    "posY": "0",
+    "size": "1"
+}, {
+    "type": "tree",
+    "posX": "3",
+    "posY": "1",
+    "size": "1"
+}, {
+    "type": "tree",
+    "posX": "3",
+    "posY": "0",
+    "size": "1"
+},{
+    "type": "industrial_area",
+    "posX": "50",
+    "posY": "50",
+    "size": "3"
+},
+{
+    "type": "residential_area",
+    "posX": "55",
+    "posY": "55",
+    "size": "5"
+},
+
+{
+    "type": "commercial_area",
+    "posX": "25",
+    "posY": "25",
+    "size": "10"
+},{
+    "type": "police_station",
+    "posX": "75",
+    "posY": "25",
+    "size": "3"
+}
+,{
+    "type": "fire_station",
+    "posX": "75",
+    "posY": "75",
+    "size": "3"
+}
+,{
+    "type": "hospital",
+    "posX": "80",
+    "posY": "75",
+    "size": "3"
+},
+{
+    "type": "river",
+    "posX": "1",
+    "posY": "1",
+    "size": "2"
+}
+]

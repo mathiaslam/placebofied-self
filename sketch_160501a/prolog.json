@@ -1,0 +1,78 @@
+[
+   {
+      "type": "residential_area",
+      "posX": "0",
+      "posY": "0",
+      "width": "20",
+      "height": "6"
+    },
+    {
+      "type": "industrial_area",
+      "posX": "21",
+      "posY": "0",
+      "width": "4",
+      "height": "6"
+    },
+    {
+      "type": "commercial_area",
+      "posX": "26",
+      "posY": "0",
+      "width": "10",
+      "height": "6"
+    },
+    {
+      "type": "police_station",
+      "posX": "37",
+      "posY": "0",
+      "size": "3"
+    },
+    {
+      "type": "fire_station",
+      "posX": "41",
+      "posY": "0",
+      "size": "3"
+    },
+    {
+      "type": "hospital",
+      "posX": "45",
+      "posY": "0",
+      "size": "3"
+    },
+    {
+      "type": "school",
+      "posX": "49",
+      "posY": "0",
+      "size": "3"
+    },
+    {
+      "type": "college",
+      "posX": "53",
+      "posY": "0",
+      "size": "4"
+    },
+    {
+      "type": "library",
+      "posX": "58",
+      "posY": "0",
+      "size": "2"
+    },
+    {
+      "type": "park_small",
+      "posX": "61",
+      "posY": "0",
+      "size": "1"
+    },
+    {
+      "type": "water_pump",
+      "posX": "63",
+      "posY": "0",
+      "size": "1"
+    },
+    {
+      "type": "power_plant_coal",
+      "posX": "65",
+      "posY": "0",
+      "size": "4"
+    }
+
+]
